@@ -53,13 +53,13 @@ int main(){
     printf("Digite o pib da cidade:\n");
     scanf(" %f", &pib1);
 
-    //Calculo da densidade populacional.
+    //Nível Aventureiro: Calculo da densidade populacional.
     densi1 = populacao1/km1;
 
-    //Calculo do PIB per capita.
+    //Nível Aventureiro: Calculo do PIB per capita.
     capita1 = populacao1/pib1;
 
-    //Calculo do super poder.
+    //Nível Mestre: Calculo do super poder.
     super1 = (float)populacao1 + pontosTuris1 + km1 + pib1 + capita1 + km1/populacao1;
 
 
@@ -138,7 +138,7 @@ int main(){
     printf("Super Poder: %.2f\n", super2);
 
 
-    //Comparação entre as duas cartas.
+    //Nível Mestre: Comparação entre as duas cartas.
     printf("\nComparacao das Cartas: \n");
 
     printf("Populacao: ");
