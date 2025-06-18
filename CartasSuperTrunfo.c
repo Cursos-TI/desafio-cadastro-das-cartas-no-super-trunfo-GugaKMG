@@ -12,6 +12,10 @@ int main(){
     float km1;
     float pib1;
 
+    //Novas váriaveis.
+    float densi1;
+    float capita1;
+
     //Váriaveis da segunda carta.
     char estado2;
     char codigo2[4] = "02";
@@ -20,6 +24,8 @@ int main(){
     int pontosTuris2;
     float km2;
     float pib2;
+    float densi2;
+    float capita2;
 
     //Apresentação do jogo e leitura do estado.
     printf("Bem Vindo ao Super Trunfo!\n\nDigite a letra inicial do estado de A a H:\n");
@@ -47,6 +53,12 @@ int main(){
     printf("Digite o pib da cidade:\n");
     scanf(" %f", &pib1);
 
+    //Calculo da densidade populacional.
+    densi1 = populacao1/km1;
+
+    //Calculo do PIB per capita.
+    capita1 = populacao1/pib1;
+
 
     //Leituras da segunda carta.
     printf("\nAgora vamos para a segunda carta!\nDigite a letra inicial do estado de A a H:\n");
@@ -69,6 +81,10 @@ int main(){
     printf("Digite o pib da cidade:\n");
     scanf(" %f", &pib2);
 
+    densi2 = populacao2/km2;
+
+    capita2 = populacao2/pib2;
+
 
     //Apresentação da primeira carta.
     printf("\nCarta 1:\n");
@@ -87,6 +103,10 @@ int main(){
 
     printf("Pib: %.2f\n", pib1);
 
+    printf("Densidade populacional: %.2f", densi1);
+
+    printf("Pib per Capita: %.2f", capita1);
+
     //Apresentação da segunda carta.
     printf("\nCarta 2:\n");
 
@@ -103,6 +123,10 @@ int main(){
     printf("Area: %.2f\n", km2);
 
     printf("Pib: %.2f\n", pib2);
+
+    printf("Densidade populacional: %.2f", densi2);
+
+    printf("Pib per Capita: %.2f", capita2);
 
     return 0;
 }
